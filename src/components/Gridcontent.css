@@ -1,10 +1,62 @@
 .container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 310px 310px 310px 310px;
     position: relative;
     margin-top: 100px;
+    column-gap: 20px;
+
+    
 }
 .fir{
-    border: solid 1px black;
-    height: 300px;
+    border: solid 1px rgb(190, 183, 183);
+    border-radius: 10px;
+    height: 400px;
+    color:black;
 }
+.fir>img{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    height: 90px;
+    width: 90px;
+}
+.line{
+    height: 4px;
+    background-color: rgb(17, 17, 7);
+    position: relative;
+    margin-left: 135px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 40px;
+    border-radius: 2px;
+}
+
+.dabba1>.fir>.line{
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+
+.dabba1:hover {
+    margin-top: -10px;
+
+    .line{
+       margin-left: 100px; 
+       width : 110px;
+    }
+    
+        
+}
+
+
+
+
+
+
+
+
+
+
