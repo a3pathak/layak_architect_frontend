@@ -8,6 +8,10 @@
    
 
 }
+div>a{
+    text-decoration: none;
+    color: white;
+}
 .navbar {
     display:flex; 
     height: 100px;
@@ -19,6 +23,21 @@
     
     
 } 
+.navbar{
+    /* text-decoration: none; */
+    
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s; 
+    
+    
+}
+
+.navbar>a:hover{
+    text-decoration: underline solid 3px rgb(45, 202, 45);
+    text-underline-offset: 5px;    
+    
+}
 .container2{
     position: relative;
     margin: 10px 1000px 10px 10px;
@@ -27,7 +46,7 @@
     border-radius: 10px 0px 0px 10px;
     border: none;
     height: 40px;
-    
+
 }
 button img{
     height: 13px;

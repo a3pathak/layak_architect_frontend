@@ -8,17 +8,19 @@ export default function Nave() {
     <div className="first">
       
       <div className="navbar">
-        <h5>Home</h5>
-        <h5>Architecture</h5>
-        <h5>Assignment</h5>
-        <h5>Blogs</h5>
-        <h5>Login</h5>
-        <div>        
+
+        <a id="home" href='#'><h5>Home</h5>
+          </a>
+        <a href='#'> <h5>Architecture</h5>   </a>
+        <a href='#'><h5>Assignment</h5>    </a>
+        <a href='#'> <h5>Blogs</h5>   </a>
+        <a href='#'> <h5>Login</h5>   </a>
+        <a href='#'>    </a><div>        
         <input className='searchBar'
-   type="search"
-   placeholder="Search here"
-   onChange=''
-   value='' ></input>
+          type="search"
+          placeholder="Search here"
+          onChange=''
+          value='' ></input>
         <button ><img src ='./images/magnifying-glass.png' alt='0'></img></button>
         </div>
 
