@@ -1,7 +1,7 @@
 import { Link as RouterLink } from 'react-router-dom';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Grid, Link, Divider, Container, Typography, Stack } from '@mui/material';
+import { Grid, Link, Divider, Container, Typography, Stack, Box } from '@mui/material';
 // routes
 import { PATH_PAGE } from '../../routes/paths';
 // components
@@ -55,13 +55,13 @@ export default function MainFooter() {
               Architecture Details Interior Design Details Building Construction Details Site Planning Details
             </Typography>
 
-            <Stack
+            {/* <Stack
               direction="row"
               justifyContent={{ xs: 'center', md: 'flex-start' }}
               sx={{ mt: 5, mb: { xs: 5, md: 0 } }}
             >
               <SocialsButton sx={{ mx: 0.5 }} />
-            </Stack>
+            </Stack> */}
           </Grid>
 
           <Grid item xs={12} md={7}>
@@ -85,19 +85,20 @@ export default function MainFooter() {
                   ))}
                 </Stack>
               ))}
-              <Typography
+              <Box
                 sx={{ color: 'black', lineHeight: '2.2' }}
               >
-                <h5 style={{color: 'white', fontSize: 22}}>Contact</h5>
-                <a style={{ color: 'white', fontSize: 18, textDecoration: 'none' }} href="mailto:layakarchitect@gmail.com">
+                <Typography variant='h5' style={{color: 'white', fontSize: 22}}>Contact</Typography>
+                <Link style={{ color: 'white', fontSize: 18, textDecoration: 'none' }} href="mailto:layakarchitect@gmail.com">
                   layakarchitect@gmail.com
-                </a>
-              </Typography>
+                </Link>
+                <SocialsButton />
+              </Box>
             </Stack>
           </Grid>
         </Grid>
 
-        <Typography variant="body2" color="white" align="center" marginY="3%" sx={{fontSize: 15}}>
+        <Typography variant="body2" color="white" align="center" sx={{fontSize: 15, py:5}}>
           {'Copyright © '}
           {getCurrentYear()}
           {' All rights reserved.'}
